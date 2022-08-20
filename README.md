@@ -1,7 +1,12 @@
 # Rutgers_Final_Project
 ## Project Overview
-The topic we chose to analyze was 2019 data on Shelter Dogs availble for adoption in 2019. 
+The topic we chose to analyze was 2019 data on Shelter Dogs availble for adoption in 2019. As dog lovers and rescue dog owners, we are interested in understanding the demographics of a dog shelter and what factors of the dogs personality or appearance could effect their likelyhood of getting adopted quickly.
+
 ### Questions to Answer
+-Does age influence the likelihood of a dog being adopted? Are puppies more likely to be adopted than senior dogs or vice versa?\
+-Does the dog’s sex influence the chances of being adopted?\
+-What characteristics of the dogs personality make dogs more adoptable? For example, “likes other dogs”, “gets along with kids”, etc.\
+-Does the dogs breed weigh heavily on the decision to adopt? Agressive breeds/ unknown shelter mixes vs confirmed/desired breeds
 
 ## Resources
 The data is a compilation of information on 2,937 dogs who were available for adoption on December 12, 2019. Data points include dogs' names, breed, color, age, sex, the date they were found, and some characteristics of their personalities.
