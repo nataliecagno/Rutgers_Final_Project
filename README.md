@@ -26,5 +26,3 @@ Since there are only 2 of us, we have been working together through most steps, 
 
 ## Machine Learning Model
 ## Database Integration
-
-
