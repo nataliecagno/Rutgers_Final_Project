@@ -26,3 +26,9 @@ Since there are only 2 of us, we have been working together through most steps, 
 
 ## Machine Learning Model
 ## Database Integration
+### Databases to create
+- calculate time spent in shelter
+- Age vs time spent in shelter
+- Sex vs time spent in shelter
+- Breed vs time spent in shelter
+- Dog Characteristics vs time spent in shelter
