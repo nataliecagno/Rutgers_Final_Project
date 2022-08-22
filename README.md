@@ -25,9 +25,4 @@ Since there are only 2 of us, we have been working together through most steps, 
 ***Annie*** - Triangle & X
 
 ## Machine Learning Model
-## Database Integration
-### ETL phase 1
-- calculate time spent in shelter, shelter_time
-- drop columns "ID" and "keep_in" for lack of relevancy
-- used shelter_dogs_df.isnull().sum() to determine null variables. Luckily, all of the variables we are investigating are filled out properly, therefore we did not drop the NA values.
-- database shelter_dogs_df contains Name, Breed, Age, Sex, Date Found, Adoptable From, Posted, Color, Coat, size, Neutered and other characteristics about dog. Database also includes updated variabled shelter_time to show days in shelter.
+
