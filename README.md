@@ -9,7 +9,7 @@ The topic we chose to analyze was 2019 data on Shelter Dogs availble for adoptio
 -Does the dogs breed weigh heavily on the decision to adopt? Agressive breeds/ unknown shelter mixes vs confirmed/desired breeds
 
 ## Resources
-The data is a compilation of information on 2,937 dogs who were available for adoption on December 12, 2019. Data points include dogs' names, breed, color, age, sex, the date they were found, and some characteristics of their personalities.
+The data is a compilation of information on 2,937 dogs who were available for adoption on December 12, 2019. Data points include dogs' names, breed, coat, age, sex, the date they were found, and some characteristics of their personalities.
 
 Data Source: [Kaggle](https://www.kaggle.com/datasets/jmolitoris/adoptable-dogs)
 
@@ -20,13 +20,13 @@ Working within a group of 2 had made the communication & execution of this proje
 [Team's Shared Document](https://docs.google.com/document/d/1KF-XNCNdnlLSpv6ixOsE8ZxQ-XxDwV9jrcZoqkKc6S8/edit) 
 Since there are only 2 of us, we have been working together through most steps, but if we had to classify ourselves into roles we would be as follows:
 
-**Team Responsibilties**\
+**Team Responsibilties**
+
 ***Natalie*** - Square & Circle\
 ***Annie*** - Triangle & X
 
 ## Machine Learning Model
-## Database Integration
-### ETL Segment 1
+
 - calculate time spent in shelter, shelter_time
 - drop columns "ID" and "keep_in" for lack of relevancy
 - used shelter_dogs_df.isnull().sum() to determine null variables. Luckily, all of the variables we are investigating are filled out properly, therefore we did not drop the NA values.
