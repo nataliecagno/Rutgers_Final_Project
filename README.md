@@ -26,9 +26,22 @@ Since there are only 2 of us, we have been working together through most steps, 
 ***Annie*** - Triangle & X
 
 ## Machine Learning Model
+### Machine Learning Model phase 1
+- We decided that the best machine learning model for our analysis would be a logistic regression. Because this data set provides all of the data and we were looking to see the likelihood of being adopted, a logistic regression was a perfect fit. 
+- In this first phase of our machine learning model, we created a new column that calculated each dog's time spent in the shelter as of the data pull date. After having the number of days readily available, we then set conditions for adoptability where if the days in the shelter were under 1800, there was a high likelihood of being adopted and if the days were equal to or greater than 1800 there was a lower likelihood. 
+- We then accounted for all null values and assessed the answer to be no if a value was not entered upon the dog's intake.
+- Next, we converted all variables to binary values. Because there were 277 breeds in the data set, we opted to assess the top 10 values and group all other breeds as 'Other'. 
+- Then we assigned the data to X and y values where a dog's adoptability was the y value and all other variables were part of the X value.
+- After training the model, we found that there was 0.8476 accuracy. Meaning, that the model at present is able to correctly predict a dog's likliehood of being adopted 84.7% of the time.
 
+## Database Integration
+### ETL phase 1
 - calculate time spent in shelter, shelter_time
 - drop columns "ID" and "keep_in" for lack of relevancy
-- used shelter_dogs_df.isnull().sum() to determine null variables. Luckily, all of the variables we are investigating are filled out properly, therefore we did not drop the NA values.
+- used shelter_dogs_df.isnull().sum() to determine null variables. Replaced NaN variables with "no" to run logistic regression. 
 - database shelter_dogs_df contains Name, Breed, Age, Sex, Date Found, Adoptable From, Posted, Color, Coat, size, Neutered and other characteristics about dog. Database also includes updated variabled shelter_time to show days in shelter.
+
+
+
+
 
