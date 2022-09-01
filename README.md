@@ -3,10 +3,11 @@
 The topic we chose to analyze was 2019 data on Shelter Dogs availble for adoption in 2019. As dog lovers and rescue dog owners, we are interested in understanding the demographics of a dog shelter and what factors of the dogs personality or appearance could effect their likelyhood of getting adopted quickly. Since our data file does not show whether or not dog was adopted, we will be going off the data of how long the dog has been in the shelter from (data pulled Dec 12, 2019).
 
 ### Questions to Answer
--Does age influence the likelihood of a dog being adopted? Are puppies more likely to be adopted than senior dogs or vice versa?\
--Does the dog’s sex influence the chances of being adopted?\
--What characteristics of the dogs personality make dogs more adoptable? For example, “likes other dogs”, “gets along with kids”, etc.\
--Does the dogs breed weigh heavily on the decision to adopt? Agressive breeds/ unknown shelter mixes vs confirmed/desired breeds
+- Does the age of a dog influence the likelihood of them being adopted? Are puppies more likely to be adopted than senior dogs or vice versa?
+- Does the dog’s gender influence the chances of being adopted? Which gender is more desirable?
+- What characteristics of the dogs personality make dogs more adoptable? For example, “likes other dogs”, “gets along with kids”, etc.
+- Does the dogs breed weigh heavily on the decision to adopt? Are Aggressive breeds/ unknown shelter mixes less likely to be adopted than known/desired breeds?
+
 
 ## Resources
 The data is a compilation of information on 2,937 dogs who were available for adoption on December 12, 2019. Data points include dogs' names, breed, coat, age, sex, the date they were found, and some characteristics of their personalities.
@@ -44,4 +45,4 @@ We used SQL to store our data and create tables for our desired breakout groups.
 ![ERD]()
 
 ## Presentation
-Check out our presentation [here](https://docs.google.com/presentation/d/1pDOwgm4KDFHsqqZ5XA-lx-JEhnzCCqGH-2m1Bs0F4_8/edit#slide=id.g1492e255fc5_0_55)
+Check out our presentation [here](https://docs.google.com/presentation/d/1pDOwgm4KDFHsqqZ5XA-lx-JEhnzCCqGH-2m1Bs0F4_8/edit#slide=id.p)
