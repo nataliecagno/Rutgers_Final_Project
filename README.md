@@ -25,7 +25,7 @@ Since there are only 2 of us, we have been working together through most steps, 
 ***Natalie*** - Square & Circle\
 ***Annie*** - Triangle & X
 
-## Machine Learning Model & Analysis
+## Machine Learning Model & Data Analysis
 ### Machine Learning Model phase 1
 - We decided that the best machine learning model for our analysis would be a logistic regression. Because this data set provides all of the data and we were looking to see the likelihood of being adopted, a logistic regression was a perfect fit. 
 - In this first phase of our machine learning model, we created a new column that calculated each dog's time spent in the shelter as of the data pull date. After having the number of days readily available, we then set conditions for adoptability where if the days in the shelter were under 1800, there was a high likelihood of being adopted and if the days were equal to or greater than 1800 there was a lower likelihood. 
@@ -39,4 +39,9 @@ Since there are only 2 of us, we have been working together through most steps, 
 - One variable we noticed would be an interesting datapoint was the time the dog has spent in the shelter. This information can be found by taking the “adoptable from” date subtracted from the date the data was pulled, which was 12/12/2019. We stored this data in a variable titled shelter_time. From here, we determined that if a dog had spent longer than 1825 days in the shelter (5 years) their likelihood of being adopted was low. This new information was stored in a new variable, adoptability, and shelter_time was removed from our dataset.
 - When cleaning the data, we uncovered there were several null variables in columns such as neutered, breed and all of the characteristic categories. It is not uncommon for an animal shelter to not know the dog’s breed or characteristics since the animals can be found in various situations. Therefore, using .fillna(), we adjusted these columns to reflect no/unknown rather than NaN. This allows us to continue with our analysis; by adjusted bree to unknown we are able to categorize dogs as either having their breed known or unknowns; and assuming that if the characteristic is unknown, it is better to assume the answer is no.
 
+### Database
+We used SQL to store our data and create tables for our desired breakout groups. 
+![ERD]()
+
 ## Presentation
+Check out our presentation [here](https://docs.google.com/presentation/d/1pDOwgm4KDFHsqqZ5XA-lx-JEhnzCCqGH-2m1Bs0F4_8/edit#slide=id.g1492e255fc5_0_55)
