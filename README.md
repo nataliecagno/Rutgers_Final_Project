@@ -40,6 +40,3 @@ Since there are only 2 of us, we have been working together through most steps, 
 - drop columns "ID" and "keep_in" for lack of relevancy
 - used shelter_dogs_df.isnull().sum() to determine null variables. Replaced NaN variables with "no" to run logistic regression. 
 - database shelter_dogs_df contains Name, Breed, Age, Sex, Date Found, Adoptable From, Posted, Color, Coat, size, Neutered and other characteristics about dog. Database also includes updated variabled shelter_time to show days in shelter.
-
-
-
