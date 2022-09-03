@@ -34,6 +34,8 @@ Since there are only 2 of us, we have been working together through most steps, 
 - Next, we converted all variables to binary values. Because there were 277 breeds in the data set, we opted to assess the top 10 values and group all other breeds as 'Other'. 
 - Then we assigned the data to X and y values where a dog's adoptability was the y value and all other variables were part of the X value.
 - After training the model, we found that there was 0.8476 accuracy. Meaning, that the model at present is able to correctly predict a dog's likliehood of being adopted 84.7% of the time.
+** More details **
+[![](Resources/click.PNG)](https://github.com/nataliecagno/Rutgers_Final_Project/tree/Natalie)
 
 ## Database Integration
 - Our dataset contains a lot of vital information, such as ID, Name, Breed, Age, Sex, Date Found, Adoptable From, Posted, Color, Coat, size, Neutered and other characteristics about dog. Like most data sets, it also included a lot of data points that do not impact our analysis. Columns we considered less value were Name, Keep In and Posted. These variables did not add any value to our analysis and were therefore removed.
@@ -43,6 +45,8 @@ Since there are only 2 of us, we have been working together through most steps, 
 ### Database
 We used SQL to store our data and create tables for our desired breakout groups. 
 ![ERD]()
+ ** More Details **
+ [![](Resources/click.PNG)](https://github.com/nataliecagno/Rutgers_Final_Project/tree/Annie)
 
 ## Presentation
 Check out our presentation [here](https://docs.google.com/presentation/d/1pDOwgm4KDFHsqqZ5XA-lx-JEhnzCCqGH-2m1Bs0F4_8/edit#slide=id.p)
