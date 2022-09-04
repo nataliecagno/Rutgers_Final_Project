@@ -46,7 +46,7 @@ Using sqlalchemy, we were able to connect our pandas library with pgAdmin store 
 - Then we assigned the data to X and y values where a dog's adoptability was the y value and all other variables were part of the X value.
 - After training the model, we found that there was 0.8476 accuracy. Meaning, that the model at present is able to correctly predict a dog's likliehood of being adopted 84.7% of the time.
 
-**More details**\
+**For moore details on how we furthered our analysis**\
 [![](Resources/click.PNG)](https://github.com/nataliecagno/Rutgers_Final_Project/tree/Natalie)
 
 ## Presentation
