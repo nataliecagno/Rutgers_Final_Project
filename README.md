@@ -3,10 +3,16 @@
 The topic we chose to analyze was 2019 data on Shelter Dogs availble for adoption in 2019. As dog lovers and rescue dog owners, we are interested in understanding the demographics of a dog shelter and what factors of the dogs personality or appearance could effect their likelyhood of getting adopted quickly. Since our data file does not show whether or not dog was adopted, we will be going off the data of how long the dog has been in the shelter from (data pulled Dec 12, 2019). Our end goal is to create a website for the shelter to showcase their dogs who are available for adoption. This will allow prospective adopters to determine if they dog they are looking for is still available to be adopted.
 
 ### Questions to Answer
+When prospective adopters stumble upon our website, we want them to be able to see the likelihood the dog is available based on certain criterias they are looking for in their forever friend. By using machine learning, we were able to determine the availability of the dog matching the adopters desires.
 - Does the age of a dog influence the likelihood of them being adopted? Are puppies more likely to be adopted than senior dogs or vice versa?
 - Does the dog’s gender influence the chances of being adopted? Which gender is more desirable?
-- What characteristics of the dogs personality make dogs more adoptable? For example, “likes other dogs”, “gets along with kids”, etc.
 - Does the dogs breed weigh heavily on the decision to adopt? Are Aggressive breeds/ unknown shelter mixes less likely to be adopted than known/desired breeds?
+
+In our analysis, we hope to uncover some patterns within the demographics of the dogs at the shelter. Questions we are looking into are as follows–
+- Do shelters mainly consist of older dogs or are there younger puppies available as well?
+- Which gender makes up majority of available dogs?
+- Are there any purebred dogs available for adoption or are most dogs unknown mixes?
+
 
 
 ## Resources
@@ -39,14 +45,13 @@ Using sqlalchemy, we were able to connect our pandas library with pgAdmin store 
 
 ## Machine Learning Model & Data Analysis
 ### Machine Learning Model phase 1
-- We decided that the best machine learning model for our analysis would be a logistic regression. Because this data set provides all of the data and we were looking to see the likelihood of being adopted, a logistic regression was a perfect fit. 
-- In this first phase of our machine learning model, we created a new column that calculated each dog's time spent in the shelter as of the data pull date. After having the number of days readily available, we then set conditions for adoptability where if the days in the shelter were under 1800, there was a high likelihood of being adopted and if the days were equal to or greater than 1800 there was a lower likelihood. 
-- We then accounted for all null values and assessed the answer to be no if a value was not entered upon the dog's intake.
-- Next, we converted all variables to binary values. Because there were 277 breeds in the data set, we opted to assess the top 10 values and group all other breeds as 'Other'. 
-- Then we assigned the data to X and y values where a dog's adoptability was the y value and all other variables were part of the X value.
-- After training the model, we found that there was 0.8476 accuracy. Meaning, that the model at present is able to correctly predict a dog's likliehood of being adopted 84.7% of the time.
+- We concluded that the best machine learning model for our analysis would be a logistic regression. Because this data set provides all of the data and we were looking to see the likelihood of being adopted, a logistic regression was a perfect fit.
+- The first step in our process was to determine the likelihood the dog is going to be available for adoption. After calculating the number of days the dog has been in the shelter, we determined that if a dog has been there for longer than 1800 days (5 years) it will be available. On the contrary, if the dog has been their for less than 5 years, we concluded that the availability will be lower than that of an older dog. 
+- Then we assigned the data to X and y values where a dog's availability was the y value and all other variables were part of the X value.
+- After training the model, we found that there was 0.8286 accuracy. Meaning, that the model at present is able to correctly predict a dog's likelihood of being adopted 82.9% of the time.
 
-**For moore details on how we furthered our analysis**\
+
+**For more details on how we furthered our analysis**\
 [![](Resources/click.PNG)](https://github.com/nataliecagno/Rutgers_Final_Project/tree/Natalie)
 
 ## Presentation
