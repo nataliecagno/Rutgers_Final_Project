@@ -72,6 +72,9 @@ For our analysis on age & breed only, we assigned the data to X and y values whe
 For our analysis on age & sex only, we assigned the data to X and y values where a dog's availability was the y value and the X values were Sex & Age. After training the model, we found that there was 0.8190 accuracy. Meaning, that the model at present is able to correctly predict a dog's likelihood of being adopted 81.9% of the time.
 ![agesex_machine_learning](Resources/agesex_machine_learning.PNG)
 
+### Conclusion
+As evident in our machine learning process, our most accurate models involve age as a key variable. We were hoping to uncover some patterns within breeds and genders of available dogs, but the models are not as accuarate if the age of the dog is not also being considered.
+
 
 ## Database Integration
 - Our dataset transformation can be further described on our [main branch](https://github.com/nataliecagno/Rutgers_Final_Project)
