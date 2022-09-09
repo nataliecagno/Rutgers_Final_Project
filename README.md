@@ -1,54 +1,70 @@
 # Rutgers_Final_Project
-## Project Overview
-The topic we chose to analyze was 2019 data on Shelter Dogs availble for adoption in 2019. As dog lovers and rescue dog owners, we are interested in understanding the demographics of a dog shelter and what factors of the dogs personality or appearance could effect their likelyhood of getting adopted quickly. Since our data file does not show whether or not dog was adopted, we will be going off the data of how long the dog has been in the shelter from (data pulled Dec 12, 2019). Our end goal is to create a website for the shelter to showcase their dogs who are available for adoption. This will allow prospective adopters to determine if they dog they are looking for is still available to be adopted.
 
-### Questions to Answer
-When prospective adopters stumble upon our website, we want them to be able to see the likelihood the dog is available based on certain criterias they are looking for in their forever friend. By using machine learning, we were able to determine the availability of the dog matching the adopters desires.
+### Overview
+Our project is multi-layered. First, we created a database and machine learning model to predict the likelihood that a dog would be available in a shelter based on the data set. Next, we integrated that with our interactive html page to allow dog adopters the ability to search and see the likelihood they will be able to find a dog they would be interested in at our shelter, Furever Friends. Finally, we conducted a deep analysis of the data to answer the questions originally posed.
+
+### Questions Originally Posed
+
 - Does the age of a dog influence the likelihood of them being adopted? Are puppies more likely to be adopted than senior dogs or vice versa?
-- Does the dog’s gender influence the chances of being adopted? Which gender is more desirable?
-- Does the dogs breed weigh heavily on the decision to adopt? Are Aggressive breeds/ unknown shelter mixes less likely to be adopted than known/desired breeds?
-
-In our analysis, we hope to uncover some patterns within the demographics of the dogs at the shelter. Questions we are looking into are as follows–
 - Do shelters mainly consist of older dogs or are there younger puppies available as well?
-- Which gender makes up majority of available dogs?
+- Does the dog’s sex influence the chances of being adopted? Which sex is more desirable?
+- Which sex makes up majority of available dogs?
+- Does the dogs breed weigh heavily on the decision to adopt? Are Aggressive breeds/ unknown shelter mixes less likely to be adopted than known/desired breeds?
 - Are there any purebred dogs available for adoption or are most dogs unknown mixes?
 
+### Resources
+[ShelterDogs.csv](https://www.kaggle.com/datasets/jmolitoris/adoptable-dogs?select=ShelterDogs.csv)
 
 
-## Resources
-The data is a compilation of information on 2,937 dogs who were available for adoption on December 12, 2019. Data points include dogs' names, breed, coat, age, sex, the date they were found, and some characteristics of their personalities.
+## Data Analysis
 
-Data Source: [Kaggle](https://www.kaggle.com/datasets/jmolitoris/adoptable-dogs)
+In our analysis we were interested in looking at two sides of the data set - average shelter time and overall shelter distribution at the time of the data pull. 
 
-- [ShelterDogs.csv](https://www.kaggle.com/datasets/jmolitoris/adoptable-dogs?select=ShelterDogs.csv)
+![census](https://github.com/nataliecagno/Rutgers_Final_Project/blob/Analysis/Resources/Census.png)
 
+#### Average Shelter Time
+We were interested in assessing how much age has an influence over adoption. To do this, we compared average shelter time in days to age. The following was the result:
+![agevst](https://github.com/nataliecagno/Rutgers_Final_Project/blob/Analysis/Resources/Age%20v%20Shelter%20Time.png)
+![age](https://github.com/nataliecagno/Rutgers_Final_Project/blob/Analysis/Resources/Shelter%20Time%20by%20Age.png)
 
-## Database Integration
-- Our dataset contains a lot of vital information, such as ID, Name, Breed, Age, Sex, Date Found, Adoptable From, Posted, Color, Coat, size, Neutered and other characteristics about dog. Like most data sets, it also included a lot of data points that do not impact our analysis. Columns we considered less value were Name, Keep In and Posted. These variables did not add any value to our analysis and were therefore removed.
-- One variable we noticed would be an interesting datapoint was the time the dog has spent in the shelter. This information can be found by taking the “adoptable from” date subtracted from the date the data was pulled, which was 12/12/2019. We stored this data in a variable titled shelter_time. From here, we determined that if a dog had spent longer than 1825 days in the shelter (5 years) their likelihood of being adopted was low. This new information was stored in a new variable, adoptability, and shelter_time was removed from our dataset.
-- When cleaning the data, we uncovered there were several null variables in columns such as neutered, breed and all of the characteristic categories. It is not uncommon for an animal shelter to not know the dog’s breed or characteristics since the animals can be found in various situations. Therefore, using .fillna(), we adjusted these columns to reflect no/unknown rather than NaN. This allows us to continue with our analysis; by adjusted bree to unknown we are able to categorize dogs as either having their breed known or unknowns; and assuming that if the characteristic is unknown, it is better to assume the answer is no.
+As you can see, age does indeed have a correlation with increased shelter time and is a strong influencer in how likely a dog will be adopted. While there were some one off instances where some older dogs had shorter stays at the shelter, this was not the norm. Additionally, the data shows very clearly that puppies have a much shorter shelter time and are likely to be adopted fairly quickly. 
 
-### Database
-Using sqlalchemy, we were able to connect our pandas library with pgAdmin store our data and create tables for our desired breakout groups.
+We were also interested in assessing how much a dog's sex influences the chances of being adopted. The following were the results:
+![sexvst](https://github.com/nataliecagno/Rutgers_Final_Project/blob/Analysis/Resources/Shelter%20Time%20by%20Sex.png)
 
- **More Details**\
- [![](Resources/click.PNG)](https://github.com/nataliecagno/Rutgers_Final_Project/tree/Annie)
-
-## Machine Learning Model & Data Analysis
-### Machine Learning Model phase 1
-- We concluded that the best machine learning model for our analysis would be a logistic regression. Because this data set provides all of the data and we were looking to see the likelihood of being adopted, a logistic regression was a perfect fit.
-- The first step in our process was to determine the likelihood the dog is going to be available for adoption. After calculating the number of days the dog has been in the shelter, we determined that if a dog has been there for longer than 1800 days (5 years) it will be available. On the contrary, if the dog has been their for less than 5 years, we concluded that the availability will be lower than that of an older dog. 
-- Then we assigned the data to X and y values where a dog's availability was the y value and all other variables were part of the X value.
-- After training the model, we found that there was 0.8286 accuracy. Meaning, that the model at present is able to correctly predict a dog's likelihood of being adopted 82.9% of the time.
+As can be seen in the above image, males make up a majority of the shelter dogs, though not by a large margin. Interestingly, while there are more male dogs available in the shelter, they are likely to be adopted more quickly as compared to their female counterparts. Its possible that even though there are more males, they are older dogs that are not as likely to be adopted.
 
 
-**For more details on how we furthered our analysis**\
-[![](Resources/click.PNG)](https://github.com/nataliecagno/Rutgers_Final_Project/tree/Natalie)
+Another aspect of adoption we were interested in assessing was the influence breed has. To do this, we compared known vs unknown breeds to average shelter time. The following was the result:
+![breedvst](https://github.com/nataliecagno/Rutgers_Final_Project/blob/Analysis/Resources/Shelter%20Time%20by%20Breed.png)
 
-## Presentation
-Check out our presentation [here](https://docs.google.com/presentation/d/1pDOwgm4KDFHsqqZ5XA-lx-JEhnzCCqGH-2m1Bs0F4_8/edit#slide=id.p)
+Through the analysis we found that while breed may be something adopters are interested in, it does not have a significant influence over a dog's likelihood to be adopted. One potential explanation for this could be that while some adopters have a preference on breed, equally as many adopters do not.
 
-## Dashboard
-Using Tableau and HTML, we plan to create an interactive dashboard with plenty of visualizations on the demographics of the shelter dogs avaialble for adoption. We plan to make this user friendly where potential adopters can enter certain characteristics such as age, gender, breed, etc. and it will tell them the likelihood the dog is still avaialble for adoption. 
+Finally, we wanted to assess the influence the impact agreeability has on the shelter time a dog is likely to incur. We included variables such as likes people, likes children, gets along with females, gets along with males, gets along with cats and is housebroken under this umbrella term. The following was the result:
+
+![agreeable](https://github.com/nataliecagno/Rutgers_Final_Project/blob/Analysis/Resources/Shelter%20Time%20by%20Agreeability.png)
+
+Interestingly enough, there was little variance when it came to agreeability and impacts on adoption. While we suspected that liking children would be a top influencer, it was not. Instead, it seems that adopters are more interested in if their potential new dog will get along with their cat!
+
+#### Shelter Demographics
+In addition to the questions posed above, we were also interested in assessing the demographics of the shelter data. The first question posed was related to age. The following is the age distribution in the shelter where circle size is dependent on the number of dogs available: 
+![agedistribution](https://github.com/nataliecagno/Rutgers_Final_Project/blob/Analysis/Resources/Age%20Distribution.png)
+
+
+As can be seen here, there are a lot of dogs in the shelter around 10-13 years old. While for some small dogs this is more mid life expectancy, sadly this is the average life expectancy for a lot of larger breeds meaning those dogs are likely to spend their final days in a shelter. Here is another visual that assesses the average age of each sex:
+
+![agevsex](https://github.com/nataliecagno/Rutgers_Final_Project/blob/Analysis/Resources/Average%20Age%20of%20Each%20Sex.png)
+As can be seen above, the average age of dogs at the time of the census was 8 years old.
+
+Finally, we were interested in assessing the demographics of breeds in the shelter. 
+
+![breed](https://github.com/nataliecagno/Rutgers_Final_Project/blob/Analysis/Resources/Breed%20Distribution.png)
+
+This data indicates that there are indeed both known and unknown breeds available. We decided to then compare three variables at once: age, sex and breed. The following resulted (note the numbers atop the bar graph indicate average shelter time and age respectively):
+
+![breedandsex](https://github.com/nataliecagno/Rutgers_Final_Project/blob/Analysis/Resources/Shelter%20Time%20by%20Sex%20and%20Breed.png)
+
+As can be seen in this visual, it seems that amongst known breeds, there are nearly an equal amount of females and males, though males are likely to be slightly older on average. Amongst unknown breeds, there are far fewer males and the average age of females is higher. This data shows us that sex and age undoubtedly have the biggest influence on adoptions. Furthermore, its possible to surmise that age is the biggest influence where adopters are likely to adopt an unknown breed as long as its younger. 
+
 
 
