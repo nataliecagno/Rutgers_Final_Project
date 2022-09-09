@@ -32,7 +32,7 @@ Data Source: [Kaggle](https://www.kaggle.com/datasets/jmolitoris/adoptable-dogs)
 Using sqlalchemy, we were able to connect our pandas library with pgAdmin store our data and create tables for our desired breakout groups.
 
  **More Details**\
- [![](Resources/click.PNG)](https://github.com/nataliecagno/Rutgers_Final_Project/tree/Annie)
+ [![](Resources/click.PNG)](https://github.com/nataliecagno/Rutgers_Final_Project/tree/Database)
 
 ## Machine Learning Model & Data Analysis
 ### Machine Learning Model phase 1
@@ -52,7 +52,12 @@ Check out our presentation [here](https://docs.google.com/presentation/d/1pDOwgm
 Using Tableau and HTML, we plan to create an interactive dashboard with plenty of visualizations on the demographics of the shelter dogs avaialble for adoption. We plan to make this user friendly where potential adopters can enter certain characteristics such as age, gender, breed, etc. and it will tell them the likelihood the dog is still avaialble for adoption. 
 
 ## Data Analysis
-**For a more detailed data analysis answering the questions originally posed,**
+**For a detailed data analysis answering the questions originally posed,**
 [![](Resources/click.PNG)](https://github.com/nataliecagno/Rutgers_Final_Project/tree/Analysis)
+
+## Conclusion
+Adopting a dog requires a lot of consideration on the part of the owner. While some dog characteristics have perceived influence over likelihood of being adopted, after the analysis one stood out as being a clear factor: age. 
+Other influential factors include: getting along with cats and being a male.
+The average life expectancy for dogs is 10-13 years (albeit longer for some smaller breeds). The longer they spend in a shelter, the odds go down they will find a forever home. Help give these friends a chance at a happy life, adopt don’t shop! Or, perhaps consider fostering a shelter dog… every bit counts!
 
 
