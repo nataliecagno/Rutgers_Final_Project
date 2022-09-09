@@ -75,4 +75,5 @@ We used SQL to store our data and create tables for our desired breakout groups.
 
 For more information--[visit here](https://github.com/nataliecagno/Rutgers_Final_Project/tree/Annie)
 
-c Visit our main branch for additional info!
+## Dashboard
+Visit our main branch for additional info!
