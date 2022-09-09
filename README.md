@@ -51,4 +51,8 @@ Check out our presentation [here](https://docs.google.com/presentation/d/1pDOwgm
 ## Dashboard
 Using Tableau and HTML, we plan to create an interactive dashboard with plenty of visualizations on the demographics of the shelter dogs avaialble for adoption. We plan to make this user friendly where potential adopters can enter certain characteristics such as age, gender, breed, etc. and it will tell them the likelihood the dog is still avaialble for adoption. 
 
+## Data Analysis
+**For a more detailed data analysis answering the questions originally posed,**
+[![](Resources/click.PNG)](https://github.com/nataliecagno/Rutgers_Final_Project/tree/Analysis)
+
 
