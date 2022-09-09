@@ -1,58 +1,78 @@
-# Rutgers_Final_Project
+# Rutgers_Final_Project - Deliverable 2
+
 ## Project Overview
-The topic we chose to analyze was 2019 data on Shelter Dogs availble for adoption in 2019. As dog lovers and rescue dog owners, we are interested in understanding the demographics of a dog shelter and what factors of the dogs personality or appearance could effect their likelyhood of getting adopted quickly. Since our data file does not show whether or not dog was adopted, we will be going off the data of how long the dog has been in the shelter from (data pulled Dec 12, 2019). Our end goal is to create a website for the shelter to showcase their dogs who are available for adoption. This will allow prospective adopters to determine if they dog they are looking for is still available to be adopted.
-
-### Questions to Answer
-When prospective adopters stumble upon our website, we want them to be able to see the likelihood the dog is available based on certain criterias they are looking for in their forever friend. By using machine learning, we were able to determine the availability of the dog matching the adopters desires.
-- Does the age of a dog influence the likelihood of them being adopted? Are puppies more likely to be adopted than senior dogs or vice versa?
-- Does the dog’s gender influence the chances of being adopted? Which gender is more desirable?
-- Does the dogs breed weigh heavily on the decision to adopt? Are Aggressive breeds/ unknown shelter mixes less likely to be adopted than known/desired breeds?
-
-In our analysis, we hope to uncover some patterns within the demographics of the dogs at the shelter. Questions we are looking into are as follows–
-- Do shelters mainly consist of older dogs or are there younger puppies available as well?
-- Which gender makes up majority of available dogs?
-- Are there any purebred dogs available for adoption or are most dogs unknown mixes?
-
-
+Our team is analyzing what impacts a dog's likelihood to be adopted from a shelter in order to create a website that will be informative and helpful for users. We are utilizing a dataset that was found on kaggle.com and provides insight into the census of a dog shelter in December 2019. Our overall goal is that when prospective adopters stumble upon our website, they will clearly be able to see the likelihood a dog is available based on certain criterias they are looking for in their forever friend. 
 
 ## Resources
-The data is a compilation of information on 2,937 dogs who were available for adoption on December 12, 2019. Data points include dogs' names, breed, coat, age, sex, the date they were found, and some characteristics of their personalities.
-
 Data Source: [Kaggle](https://www.kaggle.com/datasets/jmolitoris/adoptable-dogs)
 
-- [ShelterDogs.csv](https://www.kaggle.com/datasets/jmolitoris/adoptable-dogs?select=ShelterDogs.csv)
+## Deliverable 2 Submission Notes
+1. Presentation 
 
+      Our presentation can be found in the [main branch](https://github.com/nataliecagno/Rutgers_Final_Project/tree/main)
 
-## Database Integration
-- Our dataset contains a lot of vital information, such as ID, Name, Breed, Age, Sex, Date Found, Adoptable From, Posted, Color, Coat, size, Neutered and other characteristics about dog. Like most data sets, it also included a lot of data points that do not impact our analysis. Columns we considered less value were Name, Keep In and Posted. These variables did not add any value to our analysis and were therefore removed.
-- One variable we noticed would be an interesting datapoint was the time the dog has spent in the shelter. This information can be found by taking the “adoptable from” date subtracted from the date the data was pulled, which was 12/12/2019. We stored this data in a variable titled shelter_time. From here, we determined that if a dog had spent longer than 1825 days in the shelter (5 years) their likelihood of being adopted was low. This new information was stored in a new variable, adoptability, and shelter_time was removed from our dataset.
-- When cleaning the data, we uncovered there were several null variables in columns such as neutered, breed and all of the characteristic categories. It is not uncommon for an animal shelter to not know the dog’s breed or characteristics since the animals can be found in various situations. Therefore, using .fillna(), we adjusted these columns to reflect no/unknown rather than NaN. This allows us to continue with our analysis; by adjusted bree to unknown we are able to categorize dogs as either having their breed known or unknowns; and assuming that if the characteristic is unknown, it is better to assume the answer is no.
+      And is directly accessible [here](https://docs.google.com/presentation/d/1pDOwgm4KDFHsqqZ5XA-lx-JEhnzCCqGH-2m1Bs0F4_8/edit#slide=id.p)
 
-### Database
-Using sqlalchemy, we were able to connect our pandas library with pgAdmin store our data and create tables for our desired breakout groups.
+2. Github 
 
- **More Details**\
- [![](Resources/click.PNG)](https://github.com/nataliecagno/Rutgers_Final_Project/tree/Annie)
+      Working within a group of 2 had made the communication & execution of this project rather seamless. We have a shared [Google Document](https://docs.google.com/document/d/1KF-XNCNdnlLSpv6ixOsE8ZxQ-XxDwV9jrcZoqkKc6S8/edit)  as well as communication via slack.
 
-## Machine Learning Model & Data Analysis
-### Machine Learning Model phase 1
-- We concluded that the best machine learning model for our analysis would be a logistic regression. Because this data set provides all of the data and we were looking to see the likelihood of being adopted, a logistic regression was a perfect fit.
-- The first step in our process was to determine the likelihood the dog is going to be available for adoption. After calculating the number of days the dog has been in the shelter, we determined that if a dog has been there for longer than 1800 days (5 years) it will be available. On the contrary, if the dog has been their for less than 5 years, we concluded that the availability will be lower than that of an older dog. 
-- Then we assigned the data to X and y values where a dog's availability was the y value and all other variables were part of the X value.
-- After training the model, we found that there was 0.8286 accuracy. Meaning, that the model at present is able to correctly predict a dog's likelihood of being adopted 82.9% of the time.
+      Since there are only 2 of us, we have been working together through most steps. If we had to classify ourselves into roles we would be as                 follows:
 
+      **Team Responsibilties**
 
-**For more details on how we furthered our analysis**\
-[![](Resources/click.PNG)](https://github.com/nataliecagno/Rutgers_Final_Project/tree/Natalie)
+      ***Natalie*** - Square & Circle\
+      ***Annie*** - Triangle & X
 
-## Presentation
-Check out our presentation [here](https://docs.google.com/presentation/d/1pDOwgm4KDFHsqqZ5XA-lx-JEhnzCCqGH-2m1Bs0F4_8/edit#slide=id.p)
+      Please see respective branches for more insight.
 
-## Dashboard
-Using Tableau and HTML, we plan to create an interactive dashboard with plenty of visualizations on the demographics of the shelter dogs avaialble for adoption. We plan to make this user friendly where potential adopters can enter certain characteristics such as age, gender, breed, etc. and it will tell them the likelihood the dog is still avaialble for adoption. 
+3. Machine Learning Model
 
-## Data Analysis
-**For a more detailed data analysis answering the questions originally posed,**
-[![](Resources/click.PNG)](https://github.com/nataliecagno/Rutgers_Final_Project/tree/Analysis)
+    Our machine learning model is a work in progress that has seen a lot of improvements since our first submission in Deliverable 1. 
 
+    To view our current progress, check out Natalie's branch found [here](https://github.com/nataliecagno/Rutgers_Final_Project/tree/Natalie) 
 
+4. Database
+
+    Our database query language can be found [here](https://github.com/nataliecagno/Rutgers_Final_Project/blob/Annie/shelterdogdbcreation.sql)
+
+    Our Python file connecting us to SQL can be found [by clicking here](https://github.com/nataliecagno/Rutgers_Final_Project/blob/Annie/ShelterDogs_SQL_Connection.ipynb)                     
+    
+    Through our work we have:
+    
+      - Stored static data for use during the project
+      
+      - Interfaced with the project (ie database connects to the model)
+      ![connection](https://github.com/nataliecagno/Rutgers_Final_Project/blob/Annie/model%20connection.png)
+      
+      
+  
+      - Created 6 different tables 
+      
+      ![tables](https://github.com/nataliecagno/Rutgers_Final_Project/blob/Annie/table%20count.png)
+      
+      
+      
+      - Created a full join into a new table
+      
+      ![query language](https://github.com/nataliecagno/Rutgers_Final_Project/blob/Annie/creation%20full%20outer%20join.png)
+      
+      ![image](https://github.com/nataliecagno/Rutgers_Final_Project/blob/Annie/full%20outer%20join.png)
+      
+      
+      
+      - Utilized a connection string
+      
+      ![string](https://github.com/nataliecagno/Rutgers_Final_Project/blob/Annie/SQLAlchemy.png)
+      
+      
+      
+      - Created an ERD with relationships
+      
+      ![ERD](https://github.com/nataliecagno/Rutgers_Final_Project/blob/Annie/Capstone%20ERD.png)
+      
+      Please note that some transforming of data was conducted prior to importing into SQL in alignment with project goals.
+     
+5. Dashboard
+
+We are working on creating an engaging blueprint of what our dashboard will entail. Please check out our Google slide deck linked above for more info!
