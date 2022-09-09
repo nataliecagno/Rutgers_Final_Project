@@ -76,4 +76,5 @@ We used SQL to store our data and create tables for our desired breakout groups.
 For more information--[visit here](https://github.com/nataliecagno/Rutgers_Final_Project/tree/Annie)
 
 ## Dashboard
-Using Tableau and HTML, we plan to create an interactive dashboard with plenty of visualizations on the demographics of the shelter dogs avaialble for adoption. We plan to make this user friendly where potentially adopters can enter certain characteristics such as age, gender, breed, etc. and it will tell them the likelihood the dog is still avaialble for adoption. 
+Please visit our interactive website linked [here]()
+For our adoption event, this site will allow adopters to preview our available for their desired dog by selecting their age, breed and gender. The site will confirm likelihood dog is still available for adoption.
