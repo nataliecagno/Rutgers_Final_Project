@@ -75,6 +75,4 @@ We used SQL to store our data and create tables for our desired breakout groups.
 
 For more information--[visit here](https://github.com/nataliecagno/Rutgers_Final_Project/tree/Annie)
 
-## Dashboard
-Please visit our interactive website linked [here]()
-For our adoption event, this site will allow adopters to preview our available for their desired dog by selecting their age, breed and gender. The site will confirm likelihood dog is still available for adoption.
+c Visit our main branch for additional info!
