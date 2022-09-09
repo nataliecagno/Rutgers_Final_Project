@@ -22,15 +22,6 @@ Data Source: [Kaggle](https://www.kaggle.com/datasets/jmolitoris/adoptable-dogs)
 
 - [ShelterDogs.csv](https://www.kaggle.com/datasets/jmolitoris/adoptable-dogs?select=ShelterDogs.csv)
 
-## Group communication protocols
-Working within a group of 2 had made the communication & execution of this project rather seamless. We have a shared google document as well as communication via slack.
-[Team's Shared Document](https://docs.google.com/document/d/1KF-XNCNdnlLSpv6ixOsE8ZxQ-XxDwV9jrcZoqkKc6S8/edit) 
-Since there are only 2 of us, we have been working together through most steps, but if we had to classify ourselves into roles we would be as follows:
-
-**Team Responsibilties**
-
-***Natalie*** - Square & Circle\
-***Annie*** - Triangle & X
 
 ## Database Integration
 - Our dataset contains a lot of vital information, such as ID, Name, Breed, Age, Sex, Date Found, Adoptable From, Posted, Color, Coat, size, Neutered and other characteristics about dog. Like most data sets, it also included a lot of data points that do not impact our analysis. Columns we considered less value were Name, Keep In and Posted. These variables did not add any value to our analysis and were therefore removed.
