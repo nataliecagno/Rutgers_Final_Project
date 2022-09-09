@@ -67,4 +67,8 @@ This data indicates that there are indeed both known and unknown breeds availabl
 As can be seen in this visual, it seems that amongst known breeds, there are nearly an equal amount of females and males, though males are likely to be slightly older on average. Amongst unknown breeds, there are far fewer males and the average age of females is higher. This data shows us that sex and age undoubtedly have the biggest influence on adoptions. Furthermore, its possible to surmise that age is the biggest influence where adopters are likely to adopt an unknown breed as long as its younger. 
 
 
+## Conclusion
+Adopting a dog requires a lot of consideration on the part of the owner. While some dog characteristics have perceived influence over likelihood of being adopted, after the analysis one stood out as being a clear factor: age. 
+Other influential factors include: getting along with cats and being a male.
+The average life expectancy for dogs is 10-13 years (albeit longer for some smaller breeds). The longer they spend in a shelter, the odds go down they will find a forever home. Help give these friends a chance at a happy life, adopt don’t shop! Or, perhaps consider fostering a shelter dog… every bit counts!
 
