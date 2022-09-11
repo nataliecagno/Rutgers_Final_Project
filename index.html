@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Furever Friends Shelter</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body style="background-color:lightskyblue;">
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 jumbotron text-center" style="background-image: url('https://media.istockphoto.com/photos/banner-six-hungry-dogs-looking-up-begging-food-isolated-on-blue-picture-id1330020195?b=1&k=20&m=1330020195&s=170667a&w=0&h=T-go3J-ugW8786m7uacdBh4qZrQrfAOb9GbjD-CoqMY=');
+        background-size: cover; background-position: center; color: white">
+          <h1>Furever Friends Shelter</h1>
+          <p>Use the interactive tabs below to explore the available dogs in our shelter.</p>
+        </div>
+      <div>
+  <!--<form action="{{url_for('predict')}}" method="POST">-->
+  <form action="predict" method="POST">
+    <label for="age">Age</label>
+    <input type="text" id="age" name="age">
+    <br>
+    <label for="sex">sex</label>
+    <select id="sex" name="sex">
+      <option value="0">Male</option>
+      <option value="1">Female</option>
+    </select>
+    <br>
+    <label for="breed">Breed</label>
+    <select id="breed" name="breed">
+      <option value="0">Unknown Mix</option>
+      <option value="1">Known</option>
+    </select>
+    <input type="submit" value="Submit">
+  </form>
+  <br>
+  <br>
+  {{ prediction}}
+
+</div>
+
+  
+  <div class="row">
+    <div class="col-md-12">
+      <p> <h4>
+      </h4> </p>
+  </div>
+  </div>
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  </body>
+</body>
+
+</html>

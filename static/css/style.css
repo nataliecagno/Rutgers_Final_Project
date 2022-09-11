@@ -1,0 +1,52 @@
+body {
+
+    color: black;
+    font-family: Verdana;
+  }
+
+  .jumbotron {
+    background-image: url('https://media.istockphoto.com/photos/banner-six-hungry-dogs-looking-up-begging-food-isolated-on-blue-picture-id1330020195?b=1&k=20&m=1330020195&s=170667a&w=0&h=T-go3J-ugW8786m7uacdBh4qZrQrfAOb9GbjD-CoqMY=');
+    background-size: 100% 100%;
+    opacity: 0.7;
+    text-align: center;
+    color: aliceblue;
+    /* text-shadow: 3px 3px 8px whitesmoke; */
+    
+  } 
+
+  .well {
+background-color: aliceblue;
+font-family: Verdana;
+font-weight: 90;
+font-size: smaller;
+
+
+  }
+
+  .panel {
+    background-color: aliceblue;
+    font-family: Verdana;
+    font-weight: 90;
+    
+      }
+
+
+#know {
+  font-family: Verdana;
+  font-weight: 90;
+  font-size: medium;
+  background-color: whitesmoke;
+}
+
+#otu {
+  font-family: Verdana;
+  font-weight: 90;
+  font-size: medium;
+  background-color: whitesmoke;
+}
+
+#scrub{
+  font-family: Verdana;
+  font-weight: 90;
+  font-size: medium;
+  background-color: whitesmoke;
