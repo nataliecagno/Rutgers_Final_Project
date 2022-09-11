@@ -15,10 +15,6 @@ Data Source: [Kaggle](https://www.kaggle.com/datasets/jmolitoris/adoptable-dogs)
 
 2. Github 
 
-      Working within a group of 2 had made the communication & execution of this project rather seamless. We have a shared [Google Document](https://docs.google.com/document/d/1KF-XNCNdnlLSpv6ixOsE8ZxQ-XxDwV9jrcZoqkKc6S8/edit)  as well as communication via slack.
-
-      Since there are only 2 of us, we have been working together through most steps. If we had to classify ourselves into roles we would be as                 follows:
-
       **Team Responsibilties**
 
       ***Natalie*** - Square & Circle\
@@ -30,7 +26,7 @@ Data Source: [Kaggle](https://www.kaggle.com/datasets/jmolitoris/adoptable-dogs)
 
     Our machine learning model is a work in progress that has seen a lot of improvements since our first submission in Deliverable 1. 
 
-    To view our current progress, check out Natalie's branch found [here](https://github.com/nataliecagno/Rutgers_Final_Project/tree/Natalie) 
+   Check out our Machine Leaning Model branch found [here](https://github.com/nataliecagno/Rutgers_Final_Project/tree/Natalie) 
 
 4. Database
 
