@@ -20,8 +20,6 @@ Data Source: [Kaggle](https://www.kaggle.com/datasets/jmolitoris/adoptable-dogs)
       ***Natalie*** - Square & Circle\
       ***Annie*** - Triangle & X
 
-      Please see respective branches for more insight.
-
 3. Machine Learning Model
 
     Our machine learning model is a work in progress that has seen a lot of improvements since our first submission in Deliverable 1. 
