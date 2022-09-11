@@ -73,7 +73,7 @@ As evident in our machine learning process, our most accurate models involve age
 We used SQL to store our data and create tables for our desired breakout groups. 
 ![Capstone Project ERD](Resources/Capstone Project ERD.png)
 
-For more information--[visit here](https://github.com/nataliecagno/Rutgers_Final_Project/tree/Annie)
+For more information--[visit here](https://github.com/nataliecagno/Rutgers_Final_Project.git)
 
 ## Dashboard
-Visit our main branch for additional info!
+Visit our main branch for additional info and direct access to our HTML!
