@@ -49,7 +49,9 @@ Using sqlalchemy, we were able to connect our pandas library with pgAdmin store 
 Check out our presentation [here](https://docs.google.com/presentation/d/1pDOwgm4KDFHsqqZ5XA-lx-JEhnzCCqGH-2m1Bs0F4_8/edit#slide=id.p)
 
 ## Dashboard
-Using Tableau and HTML, we plan to create an interactive dashboard with plenty of visualizations on the demographics of the shelter dogs avaialble for adoption. We plan to make this user friendly where potential adopters can enter certain characteristics such as age, gender, breed, etc. and it will tell them the likelihood the dog is still avaialble for adoption. 
+Using HTML and Heroku, we have deployed an interactive website that allows potential adopters to check if their desired dog is available for adoption. By entering in an age, breed and gender, the site will tell you if the dog is avaialble for adoption or not.
+View our page
+[![](Resources/click.PNG)](https://fureverfriends-shelter.herokuapp.com/)
 
 ## Data Analysis
 **For a detailed data analysis answering the questions originally posed,**
