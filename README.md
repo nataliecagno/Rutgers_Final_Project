@@ -29,33 +29,39 @@ Data Source: [Kaggle](https://www.kaggle.com/datasets/jmolitoris/adoptable-dogs)
 - When cleaning the data, we uncovered there were several null variables in columns such as neutered, breed and all of the characteristic categories. It is not uncommon for an animal shelter to not know the dog’s breed or characteristics since the animals can be found in various situations. Therefore, using .fillna(), we adjusted these columns to reflect no/unknown rather than NaN. This allows us to continue with our analysis; by adjusted bree to unknown we are able to categorize dogs as either having their breed known or unknowns; and assuming that if the characteristic is unknown, it is better to assume the answer is no.
 
 ### Database
-Using sqlalchemy, we were able to connect our pandas library with pgAdmin store our data and create tables for our desired breakout groups.
+Using sqlalchemy, we were able to connect our pandas library with pgAdmin store our data and create tables for our desired breakout groups.\
+![CapstoneERD](Resources/CapstoneERD.png)
 
  **More Details**\
  [![](Resources/click.PNG)](https://github.com/nataliecagno/Rutgers_Final_Project/tree/Database)
 
 ## Machine Learning Model & Data Analysis
-### Machine Learning Model phase 1
+### Machine Learning Model 
 - We concluded that the best machine learning model for our analysis would be a logistic regression. Because this data set provides all of the data and we were looking to see the likelihood of being adopted, a logistic regression was a perfect fit.
 - The first step in our process was to determine the likelihood the dog is going to be available for adoption. After calculating the number of days the dog has been in the shelter, we determined that if a dog has been there for longer than 1800 days (5 years) it will be available. On the contrary, if the dog has been their for less than 5 years, we concluded that the availability will be lower than that of an older dog. 
 - Then we assigned the data to X and y values where a dog's availability was the y value and all other variables were part of the X value.
 - After training the model, we found that there was 0.8286 accuracy. Meaning, that the model at present is able to correctly predict a dog's likelihood of being adopted 82.9% of the time.
+![overall_machine_learning](Resources/overall_machine_learning.PNG)
 
-
-**For more details on how we furthered our analysis**\
+**For more details on how we furthered our machine learning analysis**\
 [![](Resources/click.PNG)](https://github.com/nataliecagno/Rutgers_Final_Project/tree/Natalie)
 
+### Data Analysis
+In our analysis we were interested in looking at two sides of the data set - average shelter time and overall shelter distribution at the time of the data pull.
+We were interested in assessing how much age has an influence over adoption. To do this, we compared average shelter time in days to age. The following was the result:
+![AgeShelterTime](Resources/AgeShelterTime.png)
+
+**For a detailed data analysis answering more questions originally posed,**
+[![](Resources/click.PNG)](https://github.com/nataliecagno/Rutgers_Final_Project/tree/Analysis)
+ 
 ## Presentation
 Check out our presentation [here](https://docs.google.com/presentation/d/1pDOwgm4KDFHsqqZ5XA-lx-JEhnzCCqGH-2m1Bs0F4_8/edit#slide=id.p)
 
 ## Dashboard
 Using HTML and Heroku, we have deployed an interactive website that allows potential adopters to check if their desired dog is available for adoption. By entering in an age, breed and gender, the site will tell you if the dog is avaialble for adoption or not.
-View our page
+View our page\
 [![](Resources/click.PNG)](https://fureverfriends-shelter.herokuapp.com/)
 
-## Data Analysis
-**For a detailed data analysis answering the questions originally posed,**
-[![](Resources/click.PNG)](https://github.com/nataliecagno/Rutgers_Final_Project/tree/Analysis)
 
 ## Conclusion
 Adopting a dog requires a lot of consideration on the part of the owner. While some dog characteristics have perceived influence over likelihood of being adopted, after the analysis one stood out as being a clear factor: age. 
