@@ -19,7 +19,14 @@
           <p>Use the interactive tabs below to explore the available dogs in our shelter.</p>
         </div>
       <div>
-  <!--<form action="{{url_for('predict')}}" method="POST">-->
+  <h2>Get to know our dogs</h2>
+   <img src="C:\Users\natal\Documents\Rutgers_Final_Project\Resources\age.PNG" alt="Age" width="500" height="333">
+    <img src="C:\Users\natal\Documents\Rutgers_Final_Project\Resources\gender.PNG" alt="gender" width="500" height="333">
+    <img src="C:\Users\natal\Documents\Rutgers_Final_Project\Resources\breed.PNG" alt="Breed" width="500" height="333">
+    </h3 class="text center"> Our shelter is made up of dogs of all ages, genders and breeds.   </h3>
+  <h2 class="text-center">Adoption Event</h2>
+    </h3 class= "text-center">Furever Friends Shelter is hosting an adoption event for our recently rescued dogs. Enter the desired age, breed and sex of your next furever friend and our site will determine if they are available for immediate adoption. Help give these friends a chance at a happy life, adopt dont shop! </h3>
+
   <form action="predict" method="POST">
     <label for="age">Age</label>
     <input type="text" id="age" name="age">
@@ -39,19 +46,19 @@
   </form>
   <br>
   <br>
-  {{ prediction}}
-
 </div>
-
-  
   <div class="row">
     <div class="col-md-12">
-      <p> <h4>
-      </h4> </p>
+      <p> </h3> {{ prediction}}
+      </h3> </p>
   </div>
   </div>
 </div>
-
+<h2>Analysis</h2>
+<img src="C:\Users\natal\Documents\Rutgers_Final_Project\Resources\overall_machine_learning.PNG" width="200" height="267" alt="machinelearning">
+  </h3 class="text center"> While comparing the dogs time spent in a shelter against various characteristics such as age, breed and gender, we were able to determine whether or not they were still available for adoption.Using a logistic regression, our machine learning model is just over 82% accurate.  </h3>
+<h2> Conclusion</h2>
+<h4 class="text center"> Adopting a dog requires a lot of consideration on the part of the owner. While some dog characteristics have perceived influence over likelihood of being adopted, after the analysis one stood out as being a clear factor: age. The average life expectancy for dogs is 10-13 years. The longer they spend in a shelter, the odds go down they will find a forever home. Help give these friends a chance at a happy life, adopt dont shop! Or, perhaps consider fostering a shelter dog… every bit counts! </h4>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   </body>
