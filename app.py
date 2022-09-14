@@ -21,8 +21,8 @@ def predict():
     
 
     # get data in correct ofrmat and then do your predict and stuff
-    classifier_1 = load("classifier_1.pkl")
-    prediction = classifier_1.predict([[age, sex, breed]])[0]
+    classifier_2 = load("model_1.pkl")
+    prediction = classifier_2.predict([[age, sex, breed]])[0]
     if prediction == int(prediction)== 0 :
         return render_template("index.html", prediction="Unavailable")
     else:
