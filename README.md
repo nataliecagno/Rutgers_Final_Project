@@ -37,33 +37,33 @@ Data Source: [Kaggle](https://www.kaggle.com/datasets/jmolitoris/adoptable-dogs)
       - Stored static data for use during the project
       
       - Interfaced with the project (ie database connects to the model)
-      ![connection](https://github.com/nataliecagno/Rutgers_Final_Project/blob/Annie/model%20connection.png)
+      ![connection](https://github.com/nataliecagno/Rutgers_Final_Project/blob/Database/Resources/model%20connection.png)
       
       
   
       - Created 6 different tables 
       
-      ![tables](https://github.com/nataliecagno/Rutgers_Final_Project/blob/Annie/table%20count.png)
+      ![tables](https://github.com/nataliecagno/Rutgers_Final_Project/blob/Database/Resources/table%20count.png)
       
       
       
       - Created a full join into a new table
       
-      ![query language](https://github.com/nataliecagno/Rutgers_Final_Project/blob/Annie/creation%20full%20outer%20join.png)
+      ![query language](https://github.com/nataliecagno/Rutgers_Final_Project/blob/Database/Resources/creation%20full%20outer%20join.png)
       
-      ![image](https://github.com/nataliecagno/Rutgers_Final_Project/blob/Annie/full%20outer%20join.png)
+      ![image](https://github.com/nataliecagno/Rutgers_Final_Project/blob/Database/Resources/full%20outer%20join.png)
       
       
       
       - Utilized a connection string
       
-      ![string](https://github.com/nataliecagno/Rutgers_Final_Project/blob/Annie/SQLAlchemy.png)
+      ![string](https://github.com/nataliecagno/Rutgers_Final_Project/blob/Database/Resources/SQLAlchemy.png)
       
       
       
       - Created an ERD with relationships
       
-      ![ERD](https://github.com/nataliecagno/Rutgers_Final_Project/blob/Annie/Capstone%20ERD.png)
+      ![ERD](https://github.com/nataliecagno/Rutgers_Final_Project/blob/Database/Resources/Capstone%20ERD.png)
       
       Please note that some transforming of data was conducted prior to importing into SQL in alignment with project goals.
      
